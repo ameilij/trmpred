@@ -1,3 +1,5 @@
+[logo] https://github.com/ameilij/trmpred/raw/master/logoubj.png
+
 Universidad Benito Juárez G.
 Doctorado en Administración Gerencial
 
