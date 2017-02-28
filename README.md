@@ -199,33 +199,34 @@ Este marco teórico extenso demanda una lectura profunda y una síntesis aguda, 
 La bibliografía inicial seleccionada para la investigación se detalla a continuación.
 
 ### Bibliografía Economía Colombiana
-Cárdenas, M.S., (2013) Introducción a la Economía Colombiana 3ra Edición, Bogotá, Colombia, Alfa Omega.
-Robinson, J. Y Urrutia, M. (2007) Economía Colombiana del Siglo XX, Bogotá, Colombia, Banco de la República.
-Cárdenas, A. O. (2016) Economía Colombiana 5ta Edición, Bogotá, Colombia, ECOE Ediciones.
-Arias, A. F. (2012) La Nueva Economía Colombiana, Bogotá, Colombia, Universidad Sergio Arboleda.
+* Cárdenas, M.S., (2013) Introducción a la Economía Colombiana 3ra Edición, Bogotá, Colombia, Alfa Omega.
+* Robinson, J. Y Urrutia, M. (2007) Economía Colombiana del Siglo XX, Bogotá, Colombia, Banco de la República.
+* Cárdenas, A. O. (2016) Economía Colombiana 5ta Edición, Bogotá, Colombia, ECOE Ediciones.
+* Arias, A. F. (2012) La Nueva Economía Colombiana, Bogotá, Colombia, Universidad Sergio Arboleda.
 
 ### Bibliografía Estadística
-Downey, A. B. (2014) Think Stats, California, Estados Unidos, O’Reilly Media.
-Trevor, H., Tibshirani, R., y Friedman, J. (2008) The Elements of Statistical Learning 2nd Edition, Standford, California, Springer.
-Yakir, B., (2011) Introduction to Statistical Thinking, Jerusalem, Israel, The Hebrew University.
+* Downey, A. B. (2014) Think Stats, California, Estados Unidos, O’Reilly Media.
+* Trevor, H., Tibshirani, R., y Friedman, J. (2008) The Elements of Statistical Learning 2nd Edition, Standford, California, Springer.
+* Yakir, B., (2011) Introduction to Statistical Thinking, Jerusalem, Israel, The Hebrew University.
+* Hyndman, R., Athanasopoulos, G. (2014) Forecasting: Principles and Practice, Sidney, Australia, OTexts.
 
 ### Blibliografía Ciencia de Datos
-Viswanathan, V. y Viswanathan, S. (2015) R Data Analysis Cookbook, Birmirghan, Reino Unido, Packt Publishing.
-Zumel, N. y Mount, J. (2014) Practical Data Science with R, New York, Estados Unidos, Manning Publications Co.
-Daroczi, G. (2015) Mastering Data Analysis with R, Birmirghan, Reino Unido, Packt Publishing.
-Tattar, P. N. (2013) R Statistical Application Development by Example, Mumbia, India, Packt Publishing.
-Finch, W. H., Bolin, J. E., y Kelley, K. (2014) Multilevel Modeling Using R, Florida, Estados Unidos, CRC Press.
-Ahlemeyer-Stubbe, A. y Coleman, S. (2014) A Practical Guide to Data Mining for Business and Industry, West Sussex, Reino Unido, Wiley. 
+* Viswanathan, V. y Viswanathan, S. (2015) R Data Analysis Cookbook, Birmirghan, Reino Unido, Packt Publishing.
+* Zumel, N. y Mount, J. (2014) Practical Data Science with R, New York, Estados Unidos, Manning Publications Co.
+* Daroczi, G. (2015) Mastering Data Analysis with R, Birmirghan, Reino Unido, Packt Publishing.
+* Tattar, P. N. (2013) R Statistical Application Development by Example, Mumbia, India, Packt Publishing.
+* Finch, W. H., Bolin, J. E., y Kelley, K. (2014) Multilevel Modeling Using R, Florida, Estados Unidos, CRC Press.
+* Ahlemeyer-Stubbe, A. y Coleman, S. (2014) A Practical Guide to Data Mining for Business and Industry, West Sussex, Reino Unido, Wiley. 
 
 ### Bibliografía Otros
-Eco, U (1977) Cómo Se Hace Una Tesis 6ta Edición, Milano, Italia, Gedisa.
+* Eco, U (1977) Cómo Se Hace Una Tesis 6ta Edición, Milano, Italia, Gedisa.
 
 ### Artículos Científicos
-Alvarado, N. C., Rassa Robayo, J. S., y Rojas Moreno J. S. (2014). Caracterización del Mercado de Derivados en Colombia. Borradores de ECONOMIA. 1(860) 1-46.
-Gomez-Gonzalez, J. E., Parra-Polania, J. A., y Villamizar-Villegas, M. (2016) Announcements are not Enough: Foreign Exchange Intervention under Imperfect Credibility. Borradores de ECONOMIA. 1(949) 1-10.
-Melo-Becerra, L.A., Ramos-Forero, J. E., Parrado-Galvis, L. M., y Zarate-Solano, H. M. (2016). Bonanzas y crisis de la actividad petrolera y su efecto sobre la economía colombiana. Borradores de ECONOMIA. 1(961) 1-32.
-Rincón-Castro, H., Rodríguez-Niño, N., y Castro-Pantoja, J. (2017) Perturbaciones macroeconómicas, tasa de cambio y pass-through sobre precios. Borradores de ECONOMIA. 1(982) 1-28.
-Rengifo M., J. J. (2009) Registro contable de futuros y contratos a plazo. Revista Gestión y Desarrollo. 6(2) 124-133.
-Castaño, M. L., Mesa Callejas, R. J., Restrepo Ochoa, S. I., y Londoño Henao, C. A. (2012) Modelando el Esquema de Intervenciones del Tipo de Cambio para Colombia. Una Aplicación Empírica de la Técnica de Regresión del Cuantil Bajo Redes Neuronales. Cuadernos de Economía. 32(59) 310-337.
+* Alvarado, N. C., Rassa Robayo, J. S., y Rojas Moreno J. S. (2014). Caracterización del Mercado de Derivados en Colombia. Borradores de ECONOMIA. 1(860) 1-46.
+* Gomez-Gonzalez, J. E., Parra-Polania, J. A., y Villamizar-Villegas, M. (2016) Announcements are not Enough: Foreign Exchange Intervention under Imperfect Credibility. Borradores de ECONOMIA. 1(949) 1-10.
+* Melo-Becerra, L.A., Ramos-Forero, J. E., Parrado-Galvis, L. M., y Zarate-Solano, H. M. (2016). Bonanzas y crisis de la actividad petrolera y su efecto sobre la economía colombiana. Borradores de ECONOMIA. 1(961) 1-32.
+* Rincón-Castro, H., Rodríguez-Niño, N., y Castro-Pantoja, J. (2017) Perturbaciones macroeconómicas, tasa de cambio y pass-through sobre precios. Borradores de ECONOMIA. 1(982) 1-28.
+* Rengifo M., J. J. (2009) Registro contable de futuros y contratos a plazo. Revista Gestión y Desarrollo. 6(2) 124-133.
+* Castaño, M. L., Mesa Callejas, R. J., Restrepo Ochoa, S. I., y Londoño Henao, C. A. (2012) Modelando el Esquema de Intervenciones del Tipo de Cambio para Colombia. Una Aplicación Empírica de la Técnica de Regresión del Cuantil Bajo Redes Neuronales. Cuadernos de Economía. 32(59) 310-337.
 
 **Actualizado** Febrero 26, 2017
