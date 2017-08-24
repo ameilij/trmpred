@@ -119,31 +119,31 @@ El siguiente cuadro resume las variables iniciales planificadas en el transcurso
 ## X. Índice Tentativo
 El índice tentativo del proyecto de investigación refleja la importancia del marco teórico subyacente por tratarse de ciencia relativamente nueva (la ciencia de datos como disciplina que empieza a entrar al campo académico como una carrera estructurada, reconocida, y documentada). También identifica los procedimientos correctos para el entrenamiento de un modelo de aprendizaje automatizado como proceso de investigación estadístico cuantitativo. 
 
-1 Introducción
+1. Introducción
 
-1.1 Antecedentes de la investigación
+1.1. Antecedentes de la investigación
 
-1.2 Problema de investigación
+1.2. Problema de investigación
 
-1.3 Objetivos de investigación
+1.3. Objetivos de investigación
 
-1.3.1 Objetivo general
+1.3.1. Objetivo general
 
-1.3.2 Objetivos específicos
+1.3.2. Objetivos específicos
 
-1.4 Hipótesis de investigación
+1.4. Hipótesis de investigación
 
-1.4.1 Hipótesis general
+1.4.1. Hipótesis general
 
-1.4.2 Hipótesis especificas 
+1.4.2. Hipótesis especificas 
 
-1.5 Justificación de la investigación 
+1.5. Justificación de la investigación 
 
-1.6 Metodología
+1.6. Metodología
 
-1.7 Definición de variables
+1.7. Definición de variables
 
-1.8 Delimitación del alcance
+1.8. Delimitación del alcance
 
 2 Revisión de la literatura
 
