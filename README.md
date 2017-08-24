@@ -145,95 +145,95 @@ El índice tentativo del proyecto de investigación refleja la importancia del m
 
 1.8. Delimitación del alcance
 
-2 Revisión de la literatura
+2. Revisión de la literatura
 
-2.1 Economía Colombiana
+2.1. Economía Colombiana
 
-2.1.1 La tasa representativa de mercado de Colombia
+2.1.1. La tasa representativa de mercado de Colombia
 
-2.1.2 La economía en Colombia y sus exportaciones
+2.1.2. La economía en Colombia y sus exportaciones
 
-2.1.3 Forwards y elementos de cubrimiento financieros de divisas
+2.1.3. Forwards y elementos de cubrimiento financieros de divisas
 
-2.2 Ciencia de Datos
+2.2. Ciencia de Datos
 
-2.2.1 La ciencia de datos como herramienta predictiva
+2.2.1. La ciencia de datos como herramienta predictiva
 
-2.2.2 Aprendizaje automatizado
+2.2.2. Aprendizaje automatizado
 
-2.2.2.1 Generalidades
+2.2.2.1. Generalidades
 
-2.2.2.1.1 Entrenamiento de datos
+2.2.2.1.1. Entrenamiento de datos
 
-2.2.2.1.2 El concepto de sobreajuste
+2.2.2.1.2. El concepto de sobreajuste
 
-2.2.2.1.3 Tipos de errores
+2.2.2.1.3. Tipos de errores
 
-2.2.2.1.4 Validación cruzada
+2.2.2.1.4. Validación cruzada
 
-2.2.2.2 Regresión lineal
+2.2.2.2. Regresión lineal
 
-2.2.2.3 Regresión múltiple 
+2.2.2.3. Regresión múltiple 
 
-2.2.2.4 Boosting
+2.2.2.4. Boosting
 
-2.2.2.5 Árboles y árboles aleatorios
+2.2.2.5. Árboles y árboles aleatorios
 
-2.2.2.6 Discriminante lineal 
+2.2.2.6. Discriminante lineal 
 
-2.2.2.7 Naive Bayes
+2.2.2.7. Naive Bayes
 
-2.2.2.8 SVM (máquinas de soporte de vectores)
+2.2.2.8. SVM (máquinas de soporte de vectores)
 
-2.2.3 El lenguaje R y la biblioteca CARET
+2.2.3. El lenguaje R y la biblioteca CARET
 
-3 Metodología
+3. Metodología
 
-3.1 Introducción
+3.1. Introducción
 
-3.2 Procedimientos de investigación
+3.2. Procedimientos de investigación
 
-3.2.1 Recolección de las bases de datos
+3.2.1. Recolección de las bases de datos
 
-3.2.2 Entrenamiento del modelo de datos
+3.2.2. Entrenamiento del modelo de datos
 
-3.2.3 Código fuente R
+3.2.3. Código fuente R
 
-3.2.4 Pruebas de modelos entrenados y validación cruzada
+3.2.4. Pruebas de modelos entrenados y validación cruzada
 
-3.2.5 Ensamblaje de modelos 
+3.2.5. Ensamblaje de modelos 
 
-3.2.6 Pruebas de modelos finales con datos de evaluación 
+3.2.6. Pruebas de modelos finales con datos de evaluación 
 
-3.2.7 Conclusión
+3.2.7. Conclusión
 
-4 Análisis de los datos
+4. Análisis de los datos
 
-4.1 Introducción
+4.1. Introducción
 
-4.2 Resultados finales versus prueba de datos de evaluación 
+4.2. Resultados finales versus prueba de datos de evaluación 
 
-4.3 Validez y estimación del margen de error del modelo final
+4.3. Validez y estimación del margen de error del modelo final
 
-4.4 Conclusión
+4.4. Conclusión
 
-5 Conclusiones e implicaciones
+5. Conclusiones e implicaciones
 
-5.1 Introducción 
+5.1. Introducción 
 
-5.2 Conclusiones y contraste con la búsqueda de un modelo predictivo de la TRM
+5.2. Conclusiones y contraste con la búsqueda de un modelo predictivo de la TRM
 
-5.3 Implicaciones del modelo automatizado, uso y aplicación en la organización importadora colombiana
+5.3. Implicaciones del modelo automatizado, uso y aplicación en la organización importadora colombiana
 
-5.4 Limitaciones del modelo automatizado
+5.4. Limitaciones del modelo automatizado
 
-5.5 Investigaciones posteriores
+5.5. Investigaciones posteriores
 
-6 Bibliografía
+6. Bibliografía
 
-7 Anexos
+7. Anexos
 
-8 Glosario de Términos
+8. Glosario de Términos
 
 ## XI. Cronograma de Investigación
 El marco teórico del trabajo de investigación abarca cuatro temas fundamentales: 
