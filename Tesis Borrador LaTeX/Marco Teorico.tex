@@ -14,7 +14,7 @@
 \section{Economía Colombiana}
 
 \subsection{Introducción}
-Para la creación de un modelo de predicción de la TRM de Colombia, tomando como tesis de trabajo que existe un número finito y reducido de variables de aporte que regulan el valor de la misma a través de los ingresos por exportación y su contribución a la economía nacional, se debe primeramente comprender y definir estos conceptos. La sección del marco teórico que cubre la economía de Colombia, tiene como finalidad abarcar los siguientes temas. 
+Para la creación de un modelo de predicción de la TRM de Colombia, tomando como hipótesis de trabajo que existe un número finito y reducido de variables de aporte que regulan el valor de la misma a través de los ingresos por exportación y su contribución a la economía nacional, se debe primeramente comprender y definir estos conceptos. La sección del marco teórico que cubre la economía de Colombia, tiene como finalidad abarcar los siguientes temas. 
 
 \begin{enumerate}
 	\item Definir correctamente el concepto de tasa de cambio y su específico colombiano, la tasa de mercado representativa, desentrañando la formula que usa la Superintendencia Bancaria para su valuación diaria.
@@ -69,7 +69,7 @@ La Superintendencia Financiera de Colombia no determina el valor de la TRM sino 
 \subsection{Exportaciones de Colombia}
 Si bien no buscamos ser expertos en ninguno de los tipos de exportación que hace Colombia, es importante en esta sección describir uno a uno los rubros con mayor contribución, ya que serán nuestras variables independientes para aplicar en el proceso de aprendizaje automatizado y modelar el comportamiento futuro de la TRM. 
 
-\subsubsection{El Petroleo}
+\subsubsection{El Petróleo}
 Del petróleo se dice que es el energético más importante en la historia de la humanidad, que es un recurso no renovable que aporta el mayor porcentaje del total de la energía que se consume en el mundo. En cuanto a Colombia, hace parte del grupo de países en el mundo que tiene petróleo, sin llegar a ser un país petrolero; su producción para el año 2015 tan solo alcanzó un millón de barriles diarios, de los cuales no todos son clasificados como los mejores, ya que no alcanzan según las normas API el nivel superior a 26 grados (Cárdenas, 2016). 
 
 En Colombia los recursos naturales no renovables, entre ellos, los hidrocarburos, son propiedad del Estado. La política petrolera es definida por el Gobierno Nacional a través del Ministerio de Minas y Energía, y hasta el año 2003 Ecopetrol era la empresa encargada de su ejecución. 
@@ -313,16 +313,16 @@ especificidad= \frac{VN}{(FP + VN)}
 \textbf{Valor Predictivo Positivo:} El valor predictivo positivo es la probabilidad de que un fenomeno este presente cuando la predicción arroja un valor positivo. Por ejemplo, la probabilidad de que un paciente tenga diabetes cuando el examen arroja positivo. Podemos expresar la formula como un cociente de la siguiente forma:
 
 \begin{equation}
-valor predictivo positivo = \frac{VP}{(VP + FP)}
+\mbox{\textit{valor predictivo positivo}} = \frac{VP}{(VP + FP)}
 \end{equation}
 
 \textbf{Valor Predictivo Negativo:} Lo opuesto del valor predictivo positivo, es la probabilidad de que una prediccion arroje negativo cuando el fenómeno no este presente. Por ejemplo, la probabilidad de que un paciente no se le detecte diabetes cuando en la vida real no la tiene. Podemos expresar la formula como un cociente de la siguiente forma:
 
 \begin{equation}
-valor predictivo negativo = \frac{VN}{(VN + FN)}
+\mbox{\textit{valor predictivo negativo}} = \frac{VN}{(VN + FN)}
 \end{equation}
 
-\textbf{Exactitud:} Quizas el mas sencillo de percibir de forma natural, la exactitud es simplemente la probabilidad de una prediccion correcta. Podemos expresar la formula como un cociente de la siguiente forma:
+\textbf{Exactitud:} Quizás el mas sencillo de percibir de forma natural, la exactitud es simplemente la probabilidad de una prediccion correcta. Podemos expresar la formula como un cociente de la siguiente forma:
 
 \begin{equation}
 exactitud = \frac{VP + VN}{(VP + FP + VN + FN)}
@@ -391,7 +391,7 @@ De manera menos formal, podemos definir el coeficiente de correlación de Pearso
 
 \[R = \frac{\Sigma(x_i - \bar{x})(y_i - \bar{y})}{\sqrt{\Sigma(x_i - \bar{x})^2\Sigma(y_i - \bar{y})^2}}\]
 
-\subsubsection{R2 - Coeficiente de Determinación]}
+\subsubsection{R2 - Coeficiente de Determinación}
 El coeficiente de determinación - denominado \(R^{2}\) - es un estadistico usado en el contexto de un modelo estadístico cuyo principal propósito es predecir futuros resultados o probar una hipótesis. El coeficiente determina la calidad del modelo para replicar los resultados, y la proporción de variación de los resultados que puede explicarse por el modelo. 
 
 En el caso de regresión lineal, la formula del coeficiente de determinación sigue la siguiente forma:
