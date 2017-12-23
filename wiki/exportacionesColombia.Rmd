@@ -1,0 +1,34 @@
+---
+title: "Exportaciones Colombia"
+author: "Ariel E. Meilij"
+date: "12/23/2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+#Exportaciones Colombia
+Uno de los problemas de la investigación es el cambio de formato de datos por parte de la DANE. Queremos que la investigación tenga una fuente sólida, replicable y unificada de las fuentes de exportación. Para tal fin todos los datos se han extraído del sitio oficial de la _DANE COLOMBIA_ bajo la sección **Datos Históricos**.
+
+Para arribar a este sitio seguir el siguiente path:
+
+Inicio | Estadísticas por tema | Comercio internacional | Exportaciones | _Exportaciones Históricos_
+
+También seguir el siguiente link:
+
+http://www.dane.gov.co/index.php/estadisticas-por-tema/comercio-internacional/exportaciones/exportaciones-historicos
+
+Las fuentes de datos originales están en formato EXCEL .XLS y se utilizan los siguientes archivos.
+
+1. anexos_exp_dic12.xls
+2. anexos_exp_dic13.xls
+3. anexos_exp_dic14.xls
+4. anexos_exp_dic15.xls
+5. anexos_exp_dic16.xls
+
+Solo para simplicidad de trabajo, los datos se resumieron en el siguiente archivo
+
+exportacionesColombia.XLS
+
