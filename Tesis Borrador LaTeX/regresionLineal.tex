@@ -8,12 +8,12 @@
 \usepackage[utf8]{inputenc}
 
 \begin{document}
-	
+
 \chapter*{Pronosticando Valores con Regresión}
-	
+
 \section{Introducción}
-Zumel y Mount definen \emph{métodos funcionales} como aquellos modelos mejor adaptados para las tareas de clasificación y puntuación. Estos métodos son aquellos que pueden aprender de un modelo que es una función continua de sus entradas. Este tipo de métodos es especialmente útil cuando el investigador no solo quiere un valor de predicción, sino también medir la relación entre variable de entrada y resultados \cite{zumelMount}. En este caso se utiliza la función como guía del resultado esperado o predicción. Downey describe la regresión lineal como aquella que está basada en modelos de funciones lineales \cite{thinkStats}. Para Mann y Lacke la regresión lineal es aquella que se da como una función lineal entre dos variables, y la cual se puede dibujar en el plano cartesiano como una recta \cite{intoStats7}. 
-  
+Zumel y Mount definen \emph{métodos funcionales} como aquellos modelos mejor adaptados para las tareas de clasificación y puntuación. Estos métodos son aquellos que pueden aprender de un modelo que es una función continua de sus entradas. Este tipo de métodos es especialmente útil cuando el investigador no solo quiere un valor de predicción, sino también medir la relación entre variable de entrada y resultados \cite{zumelMount}. En este caso se utiliza la función como guía del resultado esperado o predicción. Downey describe la regresión lineal como aquella que está basada en modelos de funciones lineales \cite{thinkStats}. Para Mann y Lacke la regresión lineal es aquella que se da como una función lineal entre dos variables, y la cual se puede dibujar en el plano cartesiano como una recta \cite{intoStats7}.
+
 La teoría detrás de la regresión lineal es bastante homogénea a través de todos los autores. Zumel y Mount describen la regresión lineal como el más común de los métodos de aprendizaje automatizado \cite{zumelMount}. Para los autores hay una probabilidad muy grande que el método funcione bien con el problema, y si no, es muy fácil verificar cual otro método probar como segunda opción. Para Daroczi, el énfasis está en los modelos de regresión multivariable (una extensión de la regresión lineal simple de un solo predictor y resultado) que construyen el camino para la predicción de fenómenos complejos en la naturaleza y negocios (Daróczi, G., 2015). Por su parte, Harrington resume los beneficios de la regresión lineal (Harrington, P., 2012) por la facilidad de interpretar los resultados y lo frugal en el uso de ciclos de computación (aunque puede ser menos útil si el fenómeno no es perfectamente lineal).
 
 \section{Regresión Lineal}
@@ -23,7 +23,7 @@ La regresión lineal describe la tendencia lineal en la relación entre respuest
 
 \[ y = a + bx\]
 
-donde \(y\) y \(x\) son variables y \(a\) y \(b\) son coeficientes en la ecuación. El coeficiente \(a\) se llama la intercepción o punto de corte con el eje de las ordenadas, y el coeficiente \(b\) la pendiente. 
+donde \(y\) y \(x\) son variables y \(a\) y \(b\) son coeficientes en la ecuación. El coeficiente \(a\) se llama la intercepción o punto de corte con el eje de las ordenadas, y el coeficiente \(b\) la pendiente.
 
 Partiendo de la formula de la ecuación lineal, podemos expander los términos a la solución de una regresión lineal. La mayor parte de la teoría de esta sección sigue el desarrollo de la fórmula:
 
@@ -40,40 +40,40 @@ Partiendo de la formula de la ecuación lineal, podemos expander los términos a
 \noindent donde:
 
 \begin{itemize}
-	\item[] \(\beta_0\) es la intersección o término constante, 
+	\item[] \(\beta_0\) es la intersección o término constante,
 	\item[] las \(\beta _{i} (i>0)\) son los parámetros respectivos a cada variable independiente,
-	\item[] y \(p\) es el número de parámetros independientes a tener en cuenta en la regresión \cite{yakir}.    
+	\item[] y \(p\) es el número de parámetros independientes a tener en cuenta en la regresión \cite{yakir}.
 \end{itemize}
 
 En términos generales, si suponemos que $y_{i}$ es la cantidad numérica que uno desea predecir, y que $x_{i}$ es un arreglo de datos (entradas) que se corresponden con los valores resultantes (salidas) de $y_{i}$, entonces la regresión lineal busca la función que calza tales valores de forma que:
 
 \[ y_{i} \rightarrow f(x_{i}) = \beta_{1}x_{i, 1} + \cdots + \beta_{n}x_{i, n} + \epsilon_{i} \]
 
-Este último término $\epsilon_{i}$ representa lo que se llama el \emph{error asintomático}, \emph{perturbación aleatoria} o \emph{ruido} que recoge todos aquellos factores de la realidad no controlables u observables y que por tanto se asocian con el azar, y es la que confiere al modelo su carácter estocástico. La sumatoria para todos los valores del error asintomático siempre promedia cero, y sus valores siempre están no correlacionados con los de $x_{i}$ o $y_{i}$ \cite{zumelMount}. 
+Este último término $\epsilon_{i}$ representa lo que se llama el \emph{error asintomático}, \emph{perturbación aleatoria} o \emph{ruido} que recoge todos aquellos factores de la realidad no controlables u observables y que por tanto se asocian con el azar, y es la que confiere al modelo su carácter estocástico. La sumatoria para todos los valores del error asintomático siempre promedia cero, y sus valores siempre están no correlacionados con los de $x_{i}$ o $y_{i}$ \cite{zumelMount}.
 
 Bajo estas premisas, la regresión lineal es implacable buscando los coeficientes. De existir alguna combinación ventajosa o cancelación de variables, la regresión lineal las encontrará. Lo único que no hace la regresión lineal es transformar las variables para que sean lineales (en muchos casos no lo son, por eso las técnicas de investigación explorativas son importantes en la ciencia de datos previo a la búsqueda del modelo).
 
-Los coeficientes de correlación miden el grado de relación entre variables y el signo de la misma, pero no la pendiente de la función. Hay muchas formas de medir la pendiente, pero la metodología más utilizada en el \emph{Método de Mínimos Cuadrados} \cite{thinkStats}. Un \emph{ajuste lineal} es una linea cuya intención modelar la relación entre dos variables. Un \emph{ajuste de mínimos cuadrados} es uno que minimiza el error cuadrático promedio entre la linea y los datos. Bajos las premisas de nuestra función lineal para cada valor $y_{i}$ hay una ecuación correspondiente resultante de la suma del valor del término constante más el producto de la pendiente por el valor independiente. Pero a menos que la relación sea perfecta, siempre habrá una desviación entre el valor de predicción (o sea $\hat{y_{i}}$) y el valor real ($y_{i}$). A esta desviación se le denomina \emph{residuo}.  
+Los coeficientes de correlación miden el grado de relación entre variables y el signo de la misma, pero no la pendiente de la función. Hay muchas formas de medir la pendiente, pero la metodología más utilizada en el \emph{Método de Mínimos Cuadrados} \cite{thinkStats}. Un \emph{ajuste lineal} es una linea cuya intención modelar la relación entre dos variables. Un \emph{ajuste de mínimos cuadrados} es uno que minimiza el error cuadrático promedio entre la linea y los datos. Bajos las premisas de nuestra función lineal para cada valor $y_{i}$ hay una ecuación correspondiente resultante de la suma del valor del término constante más el producto de la pendiente por el valor independiente. Pero a menos que la relación sea perfecta, siempre habrá una desviación entre el valor de predicción (o sea $\hat{y_{i}}$) y el valor real ($y_{i}$). A esta desviación se le denomina \emph{residuo}.
 
 El método de mínimos cuadrados busca minimizar la suma de los cuadrados de los residuos. La idea básica es que la función tiene el ajuste óptimo cuando la suma de los residuos es mínima (hay menor error en todos los puntos de la predicción). Es común para los estudiantes perder de vista porqué los valores tienen que estar elevados al cuadrado. Existen cuatro razones principales citadas por Dowen \cite{thinkStats}:
 
 \begin{enumerate}
 	\item elevar los términos al cuadrado tiene el efecto de evaluar de igual forma valores residuales positivos y negativos
 	\item elevar los términos al cuadrado tiene el efecto de darle mayor peso a los residuos de mayor valor, pero no tanto que desequilibren la fórmula
-	\item si los residuos no tienen correlación y están distribuidos de formal normal, con $\mu = 0$ y varianza desconocida pero constante, entonces el método de mínimos cuadrados y su ajuste de datos es también el mejor estimador para el término constante y la pendiente. 
-	\item los valores del término constante y la pendiente que minimizan el cuadrado de los residuos pueden ser calculados con eficiencia dentro del ambito de la computación 
+	\item si los residuos no tienen correlación y están distribuidos de formal normal, con $\mu = 0$ y varianza desconocida pero constante, entonces el método de mínimos cuadrados y su ajuste de datos es también el mejor estimador para el término constante y la pendiente.
+	\item los valores del término constante y la pendiente que minimizan el cuadrado de los residuos pueden ser calculados con eficiencia dentro del ambito de la computación
 \end{enumerate}
- 
-Dowen agrega con el advenimiento de sistemas cada vez más poderosos, matemáticamente el método de mínimos cuadrados puede ser el óptimo, pero no necesariamente el más ventajoso \cite{thinkStats}. 
+
+Dowen agrega con el advenimiento de sistemas cada vez más poderosos, matemáticamente el método de mínimos cuadrados puede ser el óptimo, pero no necesariamente el más ventajoso \cite{thinkStats}.
 
 \section{Regresión Múltiple}
-Para medir el peso de la relación entre regresando y regresor, la regresión de un solo término es suficiente. Pero en la vida real, los problemas que el investigador quiera resolver son más complejos y requieren modelos más robustos.  Los modelos de regresión en general conllevan la intención de medir la relación entre regresor y regresando controlando por otras variables, llamadas variables de confusión. 
+Para medir el peso de la relación entre regresando y regresor, la regresión de un solo término es suficiente. Pero en la vida real, los problemas que el investigador quiera resolver son más complejos y requieren modelos más robustos.  Los modelos de regresión en general conllevan la intención de medir la relación entre regresor y regresando controlando por otras variables, llamadas variables de confusión.
 
 \begin{quotation}
 	Una \emph{variable de confusión} es una tercera variable que sesga (aumenta o disminuye) la asociación entre dos variables de un modelo de regresión. Las variables de confusión siempre están asociadas con las variables dependientes e independientes \cite{daroczi}
 \end{quotation}
 
-Una de las ideas detrás de un modelo de regresión es mantener los valores de las variables de confusión fijos, para controlar su efecto sobre el resto del modelo. Variables de confusión que son candidatos en potencia se agregan al modelo como variables de regresión, y el coeficiente de regresión del modelo (el \emph{coeficiente parcial}) mide su efecto ajustado a otras variables de confusión \cite{daroczi}. 
+Una de las ideas detrás de un modelo de regresión es mantener los valores de las variables de confusión fijos, para controlar su efecto sobre el resto del modelo. Variables de confusión que son candidatos en potencia se agregan al modelo como variables de regresión, y el coeficiente de regresión del modelo (el \emph{coeficiente parcial}) mide su efecto ajustado a otras variables de confusión \cite{daroczi}.
 
 La formula de regresión múltiple no difiere mucho de la fórmula presentada para regresión lineal:
 
@@ -81,15 +81,15 @@ La formula de regresión múltiple no difiere mucho de la fórmula presentada pa
 Y_{i} = \beta_{0} + \beta_{1}X_{i} + \cdots + \beta_{n}X_{i} + \epsilon_{i}
 \end{equation}
 
-En cierta forma la regresión múltiple es la metodología más aplicable a la resolución de problemas de predicción en sistemas complejos que atribuyen su resultado a más de una variable de fuerza. La idea central de la variable de confusión es evitar resultados de correlación entre dos variables que pueden ser matemáticamente correctos pero no tener mucho sentido en la vida real. Por ejemplo, en un estudio de ataques cardíacos, el investigador puede tener la variable de peso controlada por la variable de altura, o el nivel de ejercicio del paciente, etc. 
+En cierta forma la regresión múltiple es la metodología más aplicable a la resolución de problemas de predicción en sistemas complejos que atribuyen su resultado a más de una variable de fuerza. La idea central de la variable de confusión es evitar resultados de correlación entre dos variables que pueden ser matemáticamente correctos pero no tener mucho sentido en la vida real. Por ejemplo, en un estudio de ataques cardíacos, el investigador puede tener la variable de peso controlada por la variable de altura, o el nivel de ejercicio del paciente, etc.
 
 \section{Presunción del Modelo}
 Los modelos de regresión con técnicas de estimación conocidas hacen un número de presunciones sobre la variable de resultado, las variables de predicción, y sobre su relación \cite{daroczi}. Estas presunciones se resumen en cinco puntos principales.
 
 \begin{enumerate}
 	\item $Y$ es una variable continua, o sea, no es binaria, nominal u ordinal.
-	\item Los residuos son estadísticamente independientes. Una violación de esta premisa ocurre cuando se utiliza análisis de tendencia. Dado que los años consecutivos no son independientes el uno del otro, los errores tampoco lo serán. Ende la necesidad de descomponer series de tiempo al momento de analizarlas. 
-	\item Existe una relación lineal estocástica entre cada valor de $Y$ y su correspondiente $X$. Una violación de esta premisa ocurre cuando la relación no es exactamente lineal, sino que es una desviación de una tendencia lineal. 
+	\item Los residuos son estadísticamente independientes. Una violación de esta premisa ocurre cuando se utiliza análisis de tendencia. Dado que los años consecutivos no son independientes el uno del otro, los errores tampoco lo serán. Ende la necesidad de descomponer series de tiempo al momento de analizarlas.
+	\item Existe una relación lineal estocástica entre cada valor de $Y$ y su correspondiente $X$. Una violación de esta premisa ocurre cuando la relación no es exactamente lineal, sino que es una desviación de una tendencia lineal.
 	\item $Y$ tiene una distribución normal (ajustando cada valor de $X$ fijo). Esto es necesario para poder hacer inferencias de la regresión.
 	\item $Y$ tiene el mismo valor de varianza, más allá del valor fijo de las $X's$. Esto es necesario para poder hacer inferencias de la regresión, y se conoce como el concepto de \emph{homocedasticidad}. Si se viola la presunción de homocedasticidad, tenemos el efecto de \emph{heterocedasticidad}.
 \end{enumerate}
@@ -97,16 +97,16 @@ Los modelos de regresión con técnicas de estimación conocidas hacen un númer
 Dentro de la ciencia de datos, los investigadores están más interesados en los efectos de estas presunciones sobre el ensamblaje de un modelo que la teoría en si. Si alguno de estas presunciones falla, una solución probable es buscar valores extremos (outliers). Dentro del lenguaje R, es muy sencillo verificar si un modelo de regresión lineal cumple con las cinco condiciones utilizando la función \texttt{gvlma} del paquete con el mismo nombre.
 
 \section{Solución a un Problema de Regresión Lineal con Aprendizaje Automatizado}
-La biblioteca CARET nos permite contar con funciones previamente diseñadas en R para la resolución de problemas de regresión lineal en R utilizando aprendizaje automatizado. Esto incluye extraer un modelo de regresión lineal de un juego de datos especificando que variables utilizar como dependiente e independientes. 
+La biblioteca CARET nos permite contar con funciones previamente diseñadas en R para la resolución de problemas de regresión lineal en R utilizando aprendizaje automatizado. Esto incluye extraer un modelo de regresión lineal de un juego de datos especificando que variables utilizar como dependiente e independientes.
 
 
 
 \section{Calce de los Datos}
 Un modelo de regresión lineal nos devuelve una linea de tendencia que es la mejor linea que se ajusta a los datos. Pero por ser la mejor linea no necesariamente tiene un ajuste que se considere bueno. El significado de los parámetros de regresión se obtiene a través de una prueba de hipótesis, la cual postula que el parámetro en cuestión tiene un valor de cero. R devuelve una prueba de Test F por cada parámetro, un valor de significancia que sirve para evaluar la regresión. Un valor p de menos de 0.05 puede ser interpretado como "la linea de regresión es significativa". De otra manera no el modelo no tiene mucho valor matemático \cite{daroczi}.
 
-Sin embargo, aún si el valor de la prueba F arroja un valor significativo, no se puede por esto decir mucho sobre el ajuste de la linea de regresión. El error del ajuste lo caracteriza mejor los residuos. Hay varias maneras de medir la calidad de un modelo lineal, o la \emph{bondad de ajuste}. Uno de los más sencillos es medir la desviación estándar de los residuos. Para cualquier predicción utilizando regresión lineal, la desviación estándar de los residuos es equivalente al error promedio cuadrático de los mismos \cite{thinkStats}. 
+Sin embargo, aún si el valor de la prueba F arroja un valor significativo, no se puede por esto decir mucho sobre el ajuste de la linea de regresión. El error del ajuste lo caracteriza mejor los residuos. Hay varias maneras de medir la calidad de un modelo lineal, o la \emph{bondad de ajuste}. Uno de los más sencillos es medir la desviación estándar de los residuos. Para cualquier predicción utilizando regresión lineal, la desviación estándar de los residuos es equivalente al error promedio cuadrático de los mismos \cite{thinkStats}.
 
-Dos medidas muy utilizadas son el Coeficiente de Correlación de Pearson y el Coeficiente de Determinación.  
+Dos medidas muy utilizadas son el Coeficiente de Correlación de Pearson y el Coeficiente de Determinación.
 
 \subsection{R2 - Coeficiente de Determinación}
 La primera pregunta sobre el modelo de regresión es su calidad. ¿Qué tan bien la variable independiente explica la variable dependiente en el modelo de regresión? El \emph{coeficiente de determinación} es uno de los conceptos que explica mejor esta pregunta \cite{intoStats7}.
@@ -123,9 +123,9 @@ Estos valores son ciertos para:
 
 \[ 0 \leq r^{2} \leq 1 \]
 
-El valor del coeficiente de determinación aumenta cuando se incluyen nuevas variables en el modelo, incluso cuando éstas son poco significativas o tienen poca correlación con la variable dependiente. Esto es un problema en ciencia de datos, donde por cada variable de predicción que se agregue se puede asumir - erróneamente - que el modelo mejora al conseguir un coeficiente de determinación mayor. 
+El valor del coeficiente de determinación aumenta cuando se incluyen nuevas variables en el modelo, incluso cuando éstas son poco significativas o tienen poca correlación con la variable dependiente. Esto es un problema en ciencia de datos, donde por cada variable de predicción que se agregue se puede asumir - erróneamente - que el modelo mejora al conseguir un coeficiente de determinación mayor.
 
-En términos didácticos podemos pensar del coeficiente de determinación como un valor entre cero y uno que explica el nivel de validez de la respuesta del modelo hacia el valor de predicción del mismo, o lo que es similar, el porcentaje de la variación total que el modelo explica [Leek, J., 2016]. 
+En términos didácticos podemos pensar del coeficiente de determinación como un valor entre cero y uno que explica el nivel de validez de la respuesta del modelo hacia el valor de predicción del mismo, o lo que es similar, el porcentaje de la variación total que el modelo explica [Leek, J., 2016].
 
 \subsection{R - Coeficiente de Correlación de Pearson}
 En estadística, el coeficiente de correlación de Pearson es una medida de la relación lineal entre dos variables aleatorias cuantitativas. A diferencia de la covarianza, la correlación de Pearson es independiente de la escala de medida de las variables.
@@ -139,14 +139,19 @@ r = \frac{\Sigma(x_i - \bar{x})(y_i - \bar{y})}{\sqrt{\Sigma(x_i - \bar{x})^2\Si
 El rango de comportamiento del coeficiente de correlación siempre fluctúa dentro de un rango definido de valores:
 
 \[ -1 \leq r \leq 1\]
-	
-Cuando el valor de $r$ es 1, hablamos de una correlación perfecta positiva, pero tal caso se da muy pocas veces en el mundo real. Como regla práctica, un índice de correlación cerca a uno habla de una correlación fuerte, mientras que uno cercano a cero es señal de una correlación muy débil. El signo en el índice nos da la indicación de si la pendiente es positiva o negativa. 
 
-El cuadrado del indice de correlación es el indice de determinación de una regresión.  	
-	
-\subsection{El valor de p}
+Cuando el valor de $r$ es 1, hablamos de una correlación perfecta positiva, pero tal caso se da muy pocas veces en el mundo real. Como regla práctica, un índice de correlación cerca a uno habla de una correlación fuerte, mientras que uno cercano a cero es señal de una correlación muy débil. El signo en el índice nos da la indicación de si la pendiente es positiva o negativa.
+
+El cuadrado del indice de correlación es el indice de determinación de una regresión.
+
+\subsection{R2 Ajustado}
+Es importante tomar en cuenta que cada vez que se agrega una variable regresor al modelo, el coeficiente $R_{2}$ aumenta simplementa por el aumento de información para predecir la respuesta. Este fenómeno ocurre aunque el regresor en sí no aporte mayor importancia al modelo. Consecuentemente, un modelo con más regresores puede parecer tener un mejor ajuste simplemente por ser más grande \cite{daroczi}.
+
+La solución para esto es utilizar el R2 ajustado.
 
 \subsection{Seleccionando Variables de Predicción}
+
+
 
 \bibliographystyle{apalike}
 \pagebreak

@@ -1,0 +1,56 @@
+This is BibTeX, Version 0.99d (TeX Live 2016)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: printBib.aux
+The style file: apalike.bst
+Database file #1: thesis.bib.bib
+Warning--there's a number but no volume in mercadoDerivados
+Warning--empty year in dietterich
+Warning--can't use both author and editor fields in hayashi
+Warning--there's a number but no volume in bonanzaCrisis
+Warning--can't use both author and editor fields in experienciasExportadoras
+Warning--empty year in theodosiouSwamy
+Warning--there's a number but no volume in yuWangLai
+Warning--empty year in ensembleZhou
+Warning--empty note in ensembleZhou
+You've used 40 entries,
+            1935 wiz_defined-function locations,
+            701 strings with 8607 characters,
+and the built_in function-call counts, 12995 in all, are:
+= -- 1226
+> -- 476
+< -- 32
++ -- 160
+- -- 150
+* -- 993
+:= -- 2374
+add.period$ -- 119
+call.type$ -- 40
+change.case$ -- 250
+chr.to.int$ -- 40
+cite$ -- 49
+duplicate$ -- 546
+empty$ -- 947
+format.name$ -- 214
+if$ -- 2527
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 60
+newline$ -- 202
+num.names$ -- 120
+pop$ -- 275
+preamble$ -- 1
+purify$ -- 275
+quote$ -- 0
+skip$ -- 391
+stack$ -- 0
+substring$ -- 679
+swap$ -- 44
+text.length$ -- 1
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 190
+warning$ -- 9
+while$ -- 91
+width$ -- 0
+write$ -- 513
+(There were 9 warnings)
